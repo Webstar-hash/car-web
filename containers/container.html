@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+
+      .container {
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgb(184, 182, 182) 0.5px 0.5px 9px;
+        display: inline-block;
+        border-radius: 13px;
+        margin-left: 30px;
+        margin-top: 100px;
+        cursor: pointer;
+        transition: transform 0.5s;
+      }
+
+      .container:hover {
+        transform: scale(1.05);
+        
+      }
+
+      .front-pic {
+        width: 300px;
+        height: 200px;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        object-fit: cover;
+      }
+
+      .back-pic {
+        width: 300px;
+        height: 200px;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        object-fit: cover;
+      }
+
+      .car-thumbnail .back-pic {
+        opacity: 0;
+      }
+
+      .car-thumbnail:hover .back-pic {
+        opacity: 1;
+        transition: 0.5s;
+      }
+
+      .car-thumbnail:hover .front-pic {
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .car-thumbnail {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+      }
+
+
+      .car-thumbnail img {
+        position: absolute;
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .car-info {
+        font-family: arial;
+        text-align: center;
+        font-size: 15px;
+        height: 140px;
+        color: rgb(85, 85, 85);
+      }
+
+      .car-name {
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 17px;
+        margin-bottom: 12px;
+        color: black;
+      }
+
+      .price, 
+      .year,
+      .mileage {
+        margin-top: 6px;
+        margin-bottom: 0px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="" style="
+      display: grid;
+      grid-template-columns: 1fr 1fr ">
+
+      <div class="container">
+        <div class="car-thumbnail">
+          <img src="thumbpic/gla 45 4.jpg" alt="front-img" class="front-pic">
+          <img src="thumbpic/gla 45 0.jpg" alt="back-img" class="back-pic">
+        </div>
+        <div class="car-info">
+          <p class="car-name">
+            Mercedes GLA 45 AMG
+          </p>
+          <p class="price">
+           Price: Ksh 3,340,000
+          </p>
+          <p class="year">
+            Year: 2017
+          </p>
+          <p class="mileage">
+            Mileage: 23,000Km
+          </p>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="car-thumbnail">
+          <img src="thumbpic/gwagon0.webp" alt="front-img" class="front-pic">
+          <img src="thumbpic/gwagon1.webp" alt="back-img" class="back-pic">
+        </div>
+        <div class="car-info">
+          <p class="car-name">
+            Mercedes G63 AMG
+          </p>
+          <p class="price">
+           Price: Ksh 19,000,000
+          </p>
+          <p class="year">
+            Year: 2019
+          </p>
+          <p class="mileage">
+            Mileage: 12,300Km
+          </p>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="car-thumbnail">
+          <img src="thumbpic/s class0.jpg" alt="front-img" class="front-pic">
+          <img src="thumbpic/s class1.jpg" alt="back-img" class="back-pic">
+        </div>
+        <div class="car-info">
+          <p class="car-name">
+            Mercedes S550 4matic
+          </p>
+          <p class="price">
+           Price: Ksh 13,200,000
+          </p>
+          <p class="year">
+            Year: 2022
+          </p>
+          <p class="mileage">
+            Mileage: 7,000Km
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="car-thumbnail">
+          <img src="thumbpic/sls1.jpg" alt="front-img" class="front-pic">
+          <img src="thumbpic/sls0.jpg" alt="back-img" class="back-pic">
+        </div>
+        <div class="car-info">
+          <p class="car-name">
+            Mercedes SLS AMG
+          </p>
+          <p class="price">
+           Price: Ksh 2,790,000
+          </p>
+          <p class="year">
+            Year: 2015
+          </p>
+          <p class="mileage">
+            Mileage: 42,000Km
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
